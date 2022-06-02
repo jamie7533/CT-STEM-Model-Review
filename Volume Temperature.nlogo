@@ -640,9 +640,6 @@ to mouse-action
       ]
       if mouse-inside? [
         set shape "none"
-;        if mouse-interaction = "speed up particles" or mouse-interaction = "slow down particles" [
-;          ask erasers [ set shape "spray paint" ]
-;        ]
       ]
       set hidden? not mouse-inside?
     ]
@@ -652,29 +649,6 @@ to mouse-action
         set eraser-window-walls walls-on neighbors
         set eraser-window-walls eraser-window-walls with [not pressure?]
         set eraser-window-particles particles-on neighbors
-
-
-        ;;; addition of particles by mouse / cursor actions ;;;;
-;        if mouse-interaction = "add purple particles" or mouse-interaction = "add green particles" or mouse-interaction = "add orange particles" [
-;          sprout particles-to-add [
-;            setup-particles
-;            jump random-float 2
-;            if mouse-interaction = "add purple particles" [ set color-type violet color-particle-and-link ]
-;            if mouse-interaction = "add orange particles" [ set color-type orange color-particle-and-link ]
-;            if mouse-interaction = "add green particles"  [ set color-type green  color-particle-and-link ]
-;            update-particle-speed-visualization
-;          ]
-;        ]
-
-
-
-;        if mouse-interaction = "speed up particles" or mouse-interaction = "slow down particles" [
-;          ask eraser-window-particles [
-;            let max-speed 20
-;            if mouse-interaction = "speed up particles" [ if speed < max-speed [ set speed (speed * 1.05) ] ]
-;            if mouse-interaction = "slow down particles" [ set speed (speed / 1.05) ]
-;          ]
-;        ]
       ]
       ask particles with [any? walls-here] [ remove-from-walls ] ; deal with any walls drawn on top of particles
     ]
@@ -920,7 +894,7 @@ to setup-syringe
      and pxcor < syringe-right-x - 1
     ][
       let redness gas-temperature * 2.5
-      sprout-walls 1 [ set color (list redness 0 (250 - redness)) initialize-this-wall] ;jamie - changed color to match start temp
+      sprout-walls 1 [ set color (list redness 0 (250 - redness)) initialize-this-wall]
     ]
 
     ask patches with [ (pxcor > syringe-left-x and pxcor < syringe-right-x) and ( pycor = 0 ) ] [ sprout-plungers 1 [ set color sky ] ]
@@ -1068,7 +1042,7 @@ gas-temperature
 gas-temperature
 0
 100
-23.0
+0.0
 1
 1
 C
@@ -1094,13 +1068,7 @@ NIL
 @#$#@#$#@
 ## WHAT IS IT?
 
-This model enables students to investigate representations of syringe-like systems, exploring concepts related to gas particles and gas behavior.
-
-This model is adapted from the Particulate Nature of Matter (PNoM) Curricular Unit and used in the [Kinetic Molecular Theory CT-STEM unit](https://ct-stem.northwestern.edu/curriculum/preview/2620/pem_code/56S6DY3ERPUAFH8XWDRS/). In the unit, students explore kinetic molecular theory and gas laws. They practice the skill of modeling microscopic gas particle interactions to explain the macroscopic behavior of gases. At the end of the unit, students describe the motion of gas particles and predict how changing one or more variables will impact the gaseous system.
-
-In all of the PnoM models, gas particles are assumed to move and collide, both with each other and with other objects such as walls.
-
-In this model, students understand how different temperatures correspond with varying volumes in the syringe as its plunger moves up and down.
+This model enables students to investigate representations of syringe-like systems, exploring concepts related to gas particles and gas behavior. In all of the PnoM models, gas particles are assumed to move and collide, both with each other and with other objects such as walls. In this particular model, students understand how different temperatures correspond with varying volumes in the syringe as its plunger moves up and down.
 
 ## HOW IT WORKS
 
@@ -1130,12 +1098,19 @@ VISUALIZE-PARTICLE-SPEED? allows you to visualize particle speeds. For example, 
 
 
 ## THINGS TO NOTICE
+Notice that particles may seem very still at a temperature of 0 degrees, but they are really moving very slowly. Particles should only truly stop moving at absolute zero (0 Kevlin rather than Celsius).
 
-Transparency is used to model flashes of where pressure was transferred to the wall by fading away the color of the flash at locations where a particle hit the wall.
 
 ## THINGS TO TRY
 
 Try visualizing the particle speeds as temperature rises. Observe how the length of the scalar "arrows" change.
+
+## CURRICULAR USE
+
+This model is adapted from the Particulate Nature of Matter (PNoM) Curricular Unit and used in the [Kinetic Molecular Theory CT-STEM unit](https://ct-stem.northwestern.edu/curriculum/preview/2620/pem_code/56S6DY3ERPUAFH8XWDRS/). In the unit, students explore kinetic molecular theory and gas laws. They practice the skill of modeling microscopic gas particle interactions to explain the macroscopic behavior of gases. At the end of the unit, students describe the motion of gas particles and predict how changing one or more variables will impact the gaseous system.
+
+* This model is found on [page 2 in lesson 4](https://ct-stem.northwestern.edu/curriculum/preview/2624/page/2/pem_code/56S6DY3ERPUAFH8XWDRS/) of the KMT unit.
+* A copy of the model integrated with the CODAP data visualization tool is found in the same lesson on [page 4](https://ct-stem.northwestern.edu/curriculum/preview/2624/page/3/pem_code/56S6DY3ERPUAFH8XWDRS/)
 
 ## EXTENDING THE MODEL
 
@@ -1149,8 +1124,6 @@ The model uses `set color` with a list of three RBG values to gradually change t
 
 * GasLab Models
 * Connected Chemistry models.
-* This model is found on [page 2 in lesson 4](https://ct-stem.northwestern.edu/curriculum/preview/2624/page/2/pem_code/56S6DY3ERPUAFH8XWDRS/) of the KMT unit.
-* A copy of the model integrated with the CODAP data visualization tool is found in the same lesson on [page 4](https://ct-stem.northwestern.edu/curriculum/preview/2624/page/3/pem_code/56S6DY3ERPUAFH8XWDRS/)
 
 ## HOW TO CITE
 
