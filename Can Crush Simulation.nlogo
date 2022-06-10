@@ -1169,6 +1169,12 @@ Notice the number of particles being tracked in the graph on the right (correspo
 
 Try using the key shortcuts in the upper right corner of the buttons for SETUP, GO, and SEE-INSIDE. Definitely try exploring the see-inside functionality and noticing how the particles change as the temperature changes.
 
+## CURRICULAR USE
+
+This model is used in the [Kinetic Molecular Theory CT-STEM unit](https://ct-stem.northwestern.edu/curriculum/preview/2620/pem_code/56S6DY3ERPUAFH8XWDRS/). In the unit, students explore kinetic molecular theory and gas laws. They practice the skill of modeling microscopic gas particle interactions to explain the macroscopic behavior of gases. At the end of the unit, students describe the motion of gas particles and predict how changing one or more variables will impact the gaseous system.
+
+The model is found in lesson 8 of the unit on pages [5](https://ct-stem.northwestern.edu/curriculum/preview/2625/page/5/) and [8](https://ct-stem.northwestern.edu/curriculum/preview/2625/page/8/).
+
 ## EXTENDING THE MODEL
 
 Water temperature and can volume could be implemented as sliders to allow for an even greater variety of results. The current model also relies on a hardcoded algorithm that takes into account the different temperatures and  volume; a neat extension would be changing the simulation into one that is purely agent-based.
@@ -1187,7 +1193,7 @@ If you mention this model or the NetLogo software in a publication, we ask that 
 
 For the model itself:
 
-Aslan, U., Lee, J., and Wilensky, U. (2020). NetLogo Can Crusher Simulation model. https://ct-stem.northwestern.edu/curriculum/preview/2625/page/5/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+Aslan, U., Lee, J., and Wilensky, U. (2020). NetLogo Can Crusher Simulation model. http://ccl.northwestern.edu/netlogo/models/Cancrushersimulationmodel (link not yet available). Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
 Please cite the NetLogo software as:
 
