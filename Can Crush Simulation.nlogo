@@ -1193,14 +1193,15 @@ If you mention this model or the NetLogo software in a publication, we ask that 
 
 For the model itself:
 
-Aslan, U., Lee, J., and Wilensky, U. (2020). NetLogo Can Crusher Simulation model. http://ccl.northwestern.edu/netlogo/models/Cancrushersimulationmodel (link not yet available). Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+* Aslan, U., Lee, J., and Wilensky, U. (2020). NetLogo Can Crusher Simulation model. http://ccl.northwestern.edu/netlogo/models/Cancrushersimulationmodel (link not yet available). Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
 Please cite the NetLogo software as:
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
-To cite the Particulate Nature of Matter curriculum as a whole, please use:
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
-Novak, M., Brady, C., Holbert, N., Soylu, F. and Wilensky, U. (2010). Particulate Nature of Matter curriculum. http://ccl.northwestern.edu/curriculum/pnom/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL. Thanks to Umit Aslan and Mitchell Estberg for updating these models for inclusion the in Models Library.
+This model was developed as part of the CT-STEM Project at Northwestern University and was made possible through generous support from the National Science Foundation (grants CNS-1138461, CNS-1441041, DRL-1020101, DRL-1640201 and DRL-1842374) and the Spencer Foundation (Award #201600069). Any opinions, findings, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding organizations. For more information visit https://ct-stem.northwestern.edu/.
+
+Special thanks to the CT-STEM models team for preparing these models for inclusion in the Models Library including: Kelvin Lao, Jamie Lee, Alanda Zong, Lexie (Xinyue) Zhao, and Jacob Kelter.
 
 ### COPYRIGHT AND LICENSE
 Copyright 2010 Uri Wilensky.
