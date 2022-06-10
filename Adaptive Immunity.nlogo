@@ -476,6 +476,12 @@ Keep an eye on the graphs on the right; these will help you keep track of the nu
 
 Try changing the number of base antibodies at the start of the simulation.
 
+## CURRICULAR USE
+
+This model is from the CT-STEM [Epidemiology Unit](https://ct-stem.northwestern.edu/curriculum/preview/1660/pem_code/K7CSRKV3UF6TAEVP9D5T/). In this unit, students explore types of disease, differences in transmission and spread, immune responses, and ways to prevent and treat disease.
+
+The model can be found on [page 4](https://ct-stem.northwestern.edu/curriculum/preview/1677/page/4/pem_code/K7CSRKV3UF6TAEVP9D5T/) of lesson 5, "Responses to Disease"
+
 ## EXTENDING THE MODEL
 
 Possible model changes include decreasing or increasing the number of virus/antibody types.
@@ -490,7 +496,19 @@ Checkout the Innate Immunity model on page 3 of the same [CT-STEM lesson](https:
 
 ## CREDITS AND REFERENCES
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
+
+For the model itself:
+
+* Rasmussen, L., Levites, L., Wilensky, U. (2020). Adaptive Immunity. http://ccl.northwestern.edu/netlogo/models/AdaptiveImmunity (link not yet available) Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+This model was developed as part of the CT-STEM Project at Northwestern University and was made possible through generous support from the National Science Foundation (grants CNS-1138461, CNS-1441041, DRL-1020101, DRL-1640201 and DRL-1842374) and the Spencer Foundation (Award #201600069). Any opinions, findings, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding organizations. For more information visit https://ct-stem.northwestern.edu/.
+
+Special thanks to the CT-STEM models team for preparing these models for inclusion in the Models Library including: Kelvin Lao, Jamie Lee, Alanda Zong, Lexie (Xinyue) Zhao, and Jacob Kelter.
 @#$#@#$#@
 default
 true
