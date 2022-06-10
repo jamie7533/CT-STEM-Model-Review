@@ -89,8 +89,8 @@ end
 GRAPHICS-WINDOW
 200
 10
-795
-164
+803
+173
 -1
 -1
 7.35
@@ -111,7 +111,7 @@ GRAPHICS-WINDOW
 1
 1
 ticks
-30
+30.0
 
 BUTTON
 10
@@ -139,7 +139,7 @@ number-charges
 number-charges
 25
 200
-100
+100.0
 1
 1
 NIL
@@ -188,7 +188,7 @@ line-position
 line-position
 10
 80
-30
+30.0
 1
 1
 NIL
@@ -263,17 +263,17 @@ PLOT
 Potential Energy Distribution
 Time
 NIL
-0
-10
-0
-5
+0.0
+10.0
+0.0
+5.0
 true
 true
 "" ""
 PENS
-"Energy Left of Line" 1 0 -5298144 true "" "if any? charges\n[ifelse line? = true or fade = true [plot dens * count turtles with [xcor < line-position]][plot 0]\n]"
-"Energy Right of Line" 1 0 -14070903 true "" "if any? charges\n[ifelse line? = true or fade = true [plot dens * count turtles with [xcor >= line-position]][plot 0]\n]"
-"Total Energy" 1 0 -10899396 true "" "if any? charges\n[plot dens * count turtles]"
+"Energy Left of Line" 1.0 0 -5298144 true "" "if any? charges\n[ifelse line? = true or fade = true [plot dens * count turtles with [xcor < line-position]][plot 0]\n]"
+"Energy Right of Line" 1.0 0 -14070903 true "" "if any? charges\n[ifelse line? = true or fade = true [plot dens * count turtles with [xcor >= line-position]][plot 0]\n]"
+"Total Energy" 1.0 0 -10899396 true "" "if any? charges\n[plot dens * count turtles]"
 
 PLOT
 207
@@ -283,15 +283,15 @@ PLOT
 Electric Pressure
 Time
 NIL
-0
-10
-0
+0.0
+10.0
+0.0
 0.2
 true
 true
 "" ""
 PENS
-"ElectricPressure" 1 0 -10899396 true "" "plot dens"
+"ElectricPressure" 1.0 0 -10899396 true "" "plot dens"
 
 BUTTON
 10
@@ -318,17 +318,17 @@ PLOT
 Charge Distribution
 Time
 NIL
-0
-10
-0
-10
+0.0
+10.0
+0.0
+10.0
 true
 true
 "" ""
 PENS
-"ChargesLeftofLine" 1 0 -5298144 true "plot 0" "if any? charges\n[ifelse line? = true or fade = true [plot count turtles with [xcor <= line-position]][plot 0]\n]"
-"ChargesRightofLine" 1 0 -14070903 true "plot 0" "if any? charges\n[ifelse line? = true or fade = true [plot count turtles with [xcor > line-position]][plot 0]\n]"
-"ChargesTotal" 1 0 -10899396 true "" "plot count turtles"
+"ChargesLeftofLine" 1.0 0 -5298144 true "plot 0" "if any? charges\n[ifelse line? = true or fade = true [plot count turtles with [xcor <= line-position]][plot 0]\n]"
+"ChargesRightofLine" 1.0 0 -14070903 true "plot 0" "if any? charges\n[ifelse line? = true or fade = true [plot count turtles with [xcor > line-position]][plot 0]\n]"
+"ChargesTotal" 1.0 0 -10899396 true "" "plot count turtles"
 
 MONITOR
 85
@@ -406,6 +406,7 @@ ChargesTotal
 17
 1
 11
+
 @#$#@#$#@
 ## WHAT IS IT?
 
@@ -435,6 +436,10 @@ When two chambers are created and the charges are allowed to move freely they wi
 
 Explore how a different number of charges affects the electric pressure over time. Try seeing how different line/barrier placements also affect the electric pressure. 
 
+## CURRICULAR USE
+
+This model comes from Neil Schmidgall's [_Modeling Electrostatics Using NetLogo_](https://ct-stem.northwestern.edu/curriculum/preview/2868/) unit. It is found in the first lesson on pages [1](https://ct-stem.northwestern.edu/curriculum/preview/2871/page/1/) and [2](https://ct-stem.northwestern.edu/curriculum/preview/2871/page/2/). This lesson investigates the effects of electric potential in one or more conductors with excess charge.
+
 ## EXTENDING THE MODEL
 
 Maybe differentiate charges to the left/right of the line by color-coding them.
@@ -449,9 +454,19 @@ See other models in Neil Schmidgall's [_Modeling Electrostatics Using NetLogo_](
 
 ## CREDITS AND REFERENCES
 
-Model and curriculum author: Neil Schmidgall
+If you mention this model or the NetLogo software in a publication, we ask that you include the citations below.
 
-Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+For the model itself:
+
+* Schmidgall, N., Wilensky, U. (2020). NetLogo Electric Potential (Pressure) Preview CT-STEM model. http://ccl.northwestern.edu/netlogo/models/NetLogoelectricpotential (link not yet available)Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+Please cite the NetLogo software as:
+
+* Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+This model was developed as part of the CT-STEM Project at Northwestern University and was made possible through generous support from the National Science Foundation (grants CNS-1138461, CNS-1441041, DRL-1020101, DRL-1640201 and DRL-1842374) and the Spencer Foundation (Award #201600069). Any opinions, findings, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding organizations. For more information visit https://ct-stem.northwestern.edu/.
+
+Special thanks to the CT-STEM models team for preparing these models for inclusion in the Models Library including: Kelvin Lao, Jamie Lee, Alanda Zong, Lexie (Xinyue) Zhao, and Jacob Kelter.
 @#$#@#$#@
 default
 true
@@ -746,22 +761,22 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.1.0
+NetLogo 6.2.2
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
 default
-0
--0.2 0 0 1
-0 1 1 0
-0.2 0 0 1
+0.0
+-0.2 0 0.0 1.0
+0.0 1 1.0 0.0
+0.2 0 0.0 1.0
 link direction
 true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
 @#$#@#$#@
-
+0
 @#$#@#$#@
